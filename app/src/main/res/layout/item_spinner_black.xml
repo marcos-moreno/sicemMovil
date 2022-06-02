@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="8dp"
+    android:id="@+id/text1"
+    android:fontFamily="@font/montserrat_bold"
+    android:textSize="20sp"
+    android:layout_width="match_parent"
+    android:gravity="right"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:singleLine="true"
+    android:textAlignment="inherit"
+    android:textColor="@color/colorLightGray"
+    tools:text="HOLA"
+    tools:textColor="@color/colorDarkGray" />

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        style="@style/TextView.Header"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView"
+        android:text="Configuración"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        style="@style/TextView.Header"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_login"
+        android:text="URL Login" />
+
+    <EditText
+        style="@style/StyledConfigEditText"
+        android:layout_width="match_parent"
+        android:hint="@string/text_url_login"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiet_url_login"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        style="@style/TextView.Header"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_services"
+        android:text="URL Servicios" />
+
+    <EditText
+        style="@style/StyledConfigEditText"
+        android:layout_width="match_parent"
+        android:hint="@string/text_url_consulta"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiet_url_services"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        style="@style/TextView.Header"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/text_gps"
+        android:text="URL GPS" />
+
+    <EditText
+        style="@style/StyledConfigEditText"
+        android:layout_width="match_parent"
+        android:hint="@string/text_url_gps"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiet_url_gps"
+        android:layout_gravity="center_horizontal" />
+
+    <Button
+        style="@style/Buttons.Primary"
+        android:id="@+id/btn_save_config"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Guardar"/>
+
+    <Button
+        style="@style/Buttons.Primary"
+        android:id="@+id/btn_restore_config"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginTop="8dp"
+        android:text="Restaurar"/>
+
+
+
+</LinearLayout>

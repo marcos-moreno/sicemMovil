@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/action_sync"
+            android:icon="@drawable/ic_sync_white_24dp"
+            android:title="Sincronizar" />
+
+        <item
+            android:id="@+id/action_logout"
+            android:icon="@drawable/ic_close"
+            android:title="Cerrar Sesión" />
+
+        <item
+            android:id="@+id/action_close"
+            android:icon="@drawable/ic_exit"
+            android:title="Salir" />
+
+        <item
+            android:id="@+id/action_free"
+            android:icon="@drawable/ic_lock"
+            android:title="Liberar" />
+    </group>
+
+
+</menu>

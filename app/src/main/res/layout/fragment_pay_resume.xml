@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.PaymentDetailsFragment">
+
+        <View
+            android:id="@+id/vw_fakeview"
+            android:layout_width="0dp"
+            android:layout_height="280dp"
+            android:background="@drawable/background_gradient"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/hint_code"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Código"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtgroup"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="01234"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtcode" />
+
+        <TextView
+            android:id="@+id/txtcode"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtcicle"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtgroup" />
+
+        <TextView
+            android:id="@+id/txttype"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="P"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtdate" />
+
+        <TextView
+            android:id="@+id/txtdate"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:text="01/01/2019"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtcicle" />
+
+        <TextView
+            android:id="@+id/hint_name"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Grupo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_code" />
+
+        <TextView
+            android:id="@+id/hint_role"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Ciclo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_name" />
+
+        <TextView
+            android:id="@+id/hint_fecha"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Fecha"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_role" />
+
+        <TextView
+            android:id="@+id/hint_registro"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Tipo registro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_fecha" />
+
+        <TextView
+            android:id="@+id/hint_observations"
+            style="@style/TextView.Normal.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Observaciones"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_registro" />
+
+        <EditText
+            android:id="@+id/txtobservations"
+            style="@style/TextView.Normal.White"
+            android:backgroundTint="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textColorLink="@color/colorWhite"
+            android:textCursorDrawable="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/hint_observations" />
+
+
+        <TextView
+            android:id="@+id/title_resume"
+            style="@style/TextView.Normal.White"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Resumen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vw_fakeview" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_theorical_payment"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_resume" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_theorical_payment"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_theoric_payment" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_real_payment"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_theorical_payment" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_real_payment"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_real_payment" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_return"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_real_payment" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_return"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_return" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_input"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_return" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_contribution"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_input" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_penalty"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_input" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_fee"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_penalty" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_saving"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_penalty" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_saving"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_saving" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_save_payment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_rounded"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:text="Aceptar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_saving" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.v4.widget.NestedScrollView>

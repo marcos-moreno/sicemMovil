@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:showIn="@layout/activity_login">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/background_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <ImageView
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/logo_alvarito"
+        app:layout_constraintBottom_toTopOf="@+id/text_begin_session"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.45"/>
+
+    <TextView
+        android:id="@+id/text_begin_session"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="24sp"
+        android:text="@string/title_begin_session"
+        app:layout_constraintBottom_toTopOf="@id/cv_login" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="15dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <EditText
+                android:id="@+id/edtxtEmpresaAsesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:nextFocusDown="@+id/text_asesor"
+                android:hint="@string/hint_company_code"
+                android:singleLine="true"
+                android:visibility="gone"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <EditText
+                android:id="@+id/text_asesor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:nextFocusDown="@+id/text_password"
+                android:hint="@string/hint_user"
+                android:singleLine="true"
+                app:layout_constraintTop_toBottomOf="@id/edtxtEmpresaAsesor"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:tag="sensitive"
+                android:fontFamily="@font/montserrat_regular"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:padding="16dp"
+                android:textSize="13.9sp"
+                android:drawableLeft="@drawable/ic_person"/>
+
+            <EditText
+                android:id="@+id/text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/montserrat_regular"
+                android:hint="Contraseña"
+                android:tag="sensitive"
+                android:imeOptions="actionGo"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:padding="16dp"
+                android:textSize="13.9sp"
+                android:drawableLeft="@drawable/ic_lock"
+                app:layout_constraintTop_toBottomOf="@id/text_asesor"/>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:fontFamily="@font/montserrat_regular"
+                style="@style/Buttons"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="16dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_vertical|center_horizontal"
+                android:inputType="textAutoComplete"
+                android:text="@string/action_signin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text_password" />
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/text_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/colorBlack"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="11sp"
+        android:text="EMPRENDAMOS FINANCIERA SA DE CV v0.1.0"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_config"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        app:srcCompat="@drawable/ic_settings"
+        android:tint="@color/colorWhite"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

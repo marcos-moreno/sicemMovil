@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /*
+  ~  *
+  ~  *   Copyright (C) 2015 by Rodolfo Conde Martínez
+  ~  *   rodolfo.conde@compumed.com.mx
+  ~  *
+  ~  *   This is property of Compumed, Corp.
+  ~  *
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:state_pressed="true"
+        android:drawable="@drawable/boton_fondo_oprimido" />
+    <item android:state_focused="false" android:state_pressed="true"
+        android:drawable="@drawable/boton_fondo_oprimido" />
+    <item android:drawable="@drawable/buton_fondo" />
+</selector>
