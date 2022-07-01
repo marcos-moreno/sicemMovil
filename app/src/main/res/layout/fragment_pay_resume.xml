@@ -334,6 +334,33 @@
                 android:hint="@string/text_saving" />
         </android.support.design.widget.TextInputLayout>
 
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_total"
+            android:textColorHint="@color/colorPrimaryDark"
+            app:hintTextAppearance="@style/HintAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/til_saving" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tiet_total"
+                android:drawableLeft="@drawable/ic_money"
+                style="@style/StyledTilEditTextTheme"
+                android:focusable="false"
+                android:textColor="@color/colorLightGray"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/text_total_payment" />
+        </android.support.design.widget.TextInputLayout>
+
         <Button
             android:id="@+id/btn_save_payment"
             android:layout_width="match_parent"
@@ -349,7 +376,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/til_saving" />
+            app:layout_constraintTop_toBottomOf="@id/til_total" />
 
     </android.support.constraint.ConstraintLayout>
 

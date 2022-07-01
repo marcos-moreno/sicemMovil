@@ -41,7 +41,13 @@ class SequencesByGroupListAdapter (
                 text_register.text = SimpleDateFormat("dd/MM/yyyy").format(Date(sequence.fecreg ?: 0))
                 text_payment.text = SimpleDateFormat("dd/MM/yyyy").format(Date(date ?: 0))
                 text_type.text = sequence?.type
-                text_real_payment.text = NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble { it.real_payment ?: 0.0 })
+
+                text_real_payment.text =   NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble { ((it.real_payment) ?: 0.0) })
+
+                text_pago_pactado.text = NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble {
+                    ((it.real_payment) ?: 0.0) + ((it.aport) ?: 0.0)
+                })
+
                 text_aport.text = NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble { it.aport ?: 0.0 })
                 text_refund.text = NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble { it.refund ?: 0.0 })
                 text_saving.text = NumberFormat.getCurrencyInstance().format(sequence.payControlSequencePayControlClient.sumByDouble { it.saving ?: 0.0 })

@@ -89,7 +89,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
-        android:text="Pago Real:"
+        android:text="Pago pactado:"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/hint_type" />
@@ -149,23 +149,23 @@
         style="@style/TextView.Normal.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="32dp"
         android:text="Devolución:"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/gd_middle"
         app:layout_constraintTop_toBottomOf="@id/hint_register" />
 
     <TextView
-        android:id="@+id/text_refund"
-        style="@style/TextView.Normal"
-        android:layout_width="0dp"
+        android:id="@+id/hint_refund2"
+        style="@style/TextView.Normal.Bold"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="$55,568"
+        android:text="Pago total:"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/hint_refund"
+        app:layout_constraintStart_toEndOf="@id/gd_middle"
         app:layout_constraintTop_toBottomOf="@id/hint_register" />
 
     <TextView
@@ -173,9 +173,9 @@
         style="@style/TextView.Normal.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
-        android:text="Ahorro:"
+        android:text="Apartado:"
         android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@id/gd_middle"
         app:layout_constraintTop_toBottomOf="@id/hint_refund" />
@@ -183,21 +183,48 @@
     <TextView
         android:id="@+id/text_saving"
         style="@style/TextView.Normal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="78dp"
+        android:layout_height="19dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="23dp"
+        android:text="$55,568"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/hint_saving"
+        app:layout_constraintTop_toBottomOf="@id/hint_refund" />
+
+    <TextView
+        android:id="@+id/text_refund"
+        style="@style/TextView.Normal"
+        android:layout_width="78dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="$55,568"
+        android:textSize="14sp"
+        app:layout_constraintStart_toEndOf="@+id/hint_refund"
+        app:layout_constraintTop_toBottomOf="@id/hint_register" />
+
+    <TextView
+        android:id="@+id/text_pago_pactado"
+        style="@style/TextView.Normal"
+        android:layout_width="78dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="8dp"
         android:text="$55,568"
         android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/hint_saving"
-        app:layout_constraintTop_toBottomOf="@id/hint_refund" />
+        app:layout_constraintStart_toEndOf="@+id/hint_refund"
+        app:layout_constraintTop_toBottomOf="@id/hint_register" />
 
     <TextView
         android:id="@+id/hint_fee"
         style="@style/TextView.Normal.Bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:text="Multa:"
         android:textSize="14sp"
@@ -207,9 +234,9 @@
     <TextView
         android:id="@+id/text_fee"
         style="@style/TextView.Normal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_width="77dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="52dp"
         android:layout_marginTop="8dp"
         android:text="$55,568"
         android:textSize="14sp"
