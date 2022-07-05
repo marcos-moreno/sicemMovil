@@ -7,11 +7,11 @@
     tools:context=".SplashscreenActivity">
 
     <ImageView
+        android:id="@+id/imgvSplash"
         android:layout_width="96dp"
         android:layout_height="96dp"
-        android:id="@+id/imgvSplash"
         android:layout_gravity="center"
-        android:src="@mipmap/logo_emprendamos"
-        android:scaleType="fitStart" />
+        android:scaleType="fitStart"
+        android:src="@mipmap/ic_launcher" />
 
 </FrameLayout>

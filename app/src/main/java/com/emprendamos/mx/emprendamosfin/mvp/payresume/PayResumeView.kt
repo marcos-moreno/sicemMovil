@@ -27,7 +27,7 @@ class PayResumeView(act : View) {
         view.tiet_contribution.setText(editableZero(aport))
         view.tiet_fee.setText(editableZero(fee))
         view.tiet_saving.setText(editableZero(saving))
-
+        view.tiet_total.setText(editableZero(real_payment + aport))
         view.btn_save_payment.setOnClickListener {
             listener?.onSequenceEnded(sequenceId)
         }
