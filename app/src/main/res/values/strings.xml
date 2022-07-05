@@ -38,11 +38,7 @@
     <string name="action_register">Guardar</string>
     <string name="action_save">Guardar</string>
     <string name="placeholder_resume">AQUI VA EL RESUMEN</string>
-<<<<<<< HEAD
     <string name="client_details_placeholder">Pago teórico: %s\nPago real: %s\nDevolución: %s\nSolidario: %s\nMulta: %s\nApartado: %s</string>
-=======
-    <string name="client_details_placeholder">Pago teórico: %s\nPago real: %s\nDevolución: %s\nAportación: %s\nMulta: %s\nApartado: %s</string>
->>>>>>> f8c9b68e4fd972a2e4d6d2d6be451b17b629bf15
     <string name="hint_back_without_saving">Estas seguro que deseas salir sin guardar tus cambios?</string>
     <string name="text_url_login">Login URL</string>
     <string name="text_url_consulta">Servicios de Consulta</string>
